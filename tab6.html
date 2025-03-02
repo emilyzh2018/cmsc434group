@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=640, initial-scale=1.0">
-    <title>Tab 6 - ToDo</title>
+    <title>ToDo</title>
     <link rel="stylesheet" href="tab6style.css">
 </head>
 <body>
-    <div class="app-container">
+    <div class="device">
         <div class="content">
             <h1>-To Do List-</h1>
             <div class="todo-container">
@@ -17,26 +17,69 @@
             <ul id="taskList"></ul>
         </div>
 
-        <nav class="bottom-nav">
-            <a href="tab1.html" class="nav-item">
-                <img src="icons/text.png" alt="Text Icon"> Text
+        <div class="bottom-nav">
+    
+            <div class="nav-item">
+                <a href="tab1.html">
+                    <img 
+                    src="images/file.png" 
+                    alt="Text Icon" 
+                    class="icon"
+                />
+                </a>
+              <span class="label">Text</span>
+            </div>
+            <div class="nav-item">
+                <a href="tab2.html">
+              <img 
+                src="images/down-right.png" 
+                alt="LR Icon" 
+                class="icon"
+              />
             </a>
-            <a href="tab2.html" class="nav-item">
-                <img src="icons/lr.png" alt="LR Icon"> LR
+              <span class="label">LR</span>
+            </div>
+            <div class="nav-item">
+                <a href="tab3.html">
+              <img 
+                src="images/art.png" 
+                alt="Colors Icon" 
+                class="icon"
+              />
+                </a>
+              <span class="label">Colors</span>
+            </div>
+            <div class="nav-item">
+                <a href="tab4.html">
+              <img 
+                src="images/user.png" 
+                alt="Profile Icon" 
+                class="icon"
+              />
+                </a>
+              <span class="label">Profile</span>
+            </div>
+            <div class="nav-item">
+                <a href="tab5.html">
+              <img 
+                src="images/choice.png" 
+                alt="Choices Icon" 
+                class="icon"
+              />
             </a>
-            <a href="tab3.html" class="nav-item">
-                <img src="icons/colors.png" alt="Colors Icon"> Colors
+              <span class="label">Choices</span>
+            </div>
+            <div class="nav-item active">
+                <a href="tab6.html">
+                <img 
+                    src="images/to-do-list.png" 
+                    alt="ToDo Icon" 
+                    class="icon"
+                />
             </a>
-            <a href="tab4.html" class="nav-item">
-                <img src="icons/profile.png" alt="Profile Icon"> Profile
-            </a>
-            <a href="tab5.html" class="nav-item">
-                <img src="icons/choices.png" alt="Choices Icon"> Choices
-            </a>
-            <a href="tab6.html" class="nav-item active">
-                <img src="icons/todo.png" alt="ToDo Icon"> ToDo
-            </a>
-        </nav>
+              <span class="label">ToDo</span>
+            </div>
+        </div>
     </div>
 
     <script>
