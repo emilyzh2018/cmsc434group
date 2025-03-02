@@ -56,7 +56,7 @@ html, body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #00008b; /* Dark blue */
+  background-color: #7cb6f8; /* Dark blue */
   padding: 10px 0;
   box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
 }
