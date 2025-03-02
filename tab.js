@@ -13,3 +13,8 @@ function showChoices() {
   const resultDiv = document.getElementById('result');
   resultDiv.textContent = `You chose Camera #1: ${camera1} and Camera #2: ${camera2}`;
 }
+
+
+function profileWarning() {
+  
+}
