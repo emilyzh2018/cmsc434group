@@ -6,11 +6,17 @@
     <body>
     <div class="device">
        
-        <h1>Colors Tab</h1>
+        <h1>User Profile</h1>
 
-        <div>
-            <p id="first_line"> Health App </p>
-            <p id="second_line"> Colors </p>
+        <div id="profile_picture">
+            <img src="images/cat_profile_picture.png" width="200px">
+
+            <p>Felix Furrington II</p>
+        </div>
+
+        <div id="warning" style="display: none;">
+            Warning! Do not click on the profile image! 
+            <button id="exit-button">X</button>
         </div>
 
         <div class="bottom-nav">
@@ -79,6 +85,20 @@
     
     
     </body>
+    <script>
+        let div = document.getElementById("profile_picture");
+        let warningDiv = document.getElementById("warning");
+        let exitButton = document.getElementById("exit-button");
+
+
+        div.addEventListener("click", () => {
+            warningDiv.style.display = "flex";
+        });
+
+        exitButton.addEventListener("click", () => {
+            warningDiv.style.display = "none"
+        });
+    </script>
     <!-- <footer>
         <div id="footer">
             <a href="https://www.flaticon.com/free-icons/text" title="text icons">Text icons created by Pixel perfect - Flaticon</a><br>
