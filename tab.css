@@ -5,20 +5,34 @@
   box-sizing: border-box;
 }
 
+.device {
+  margin:auto; 
+  width: 640px;
+  height: 960px;
+  overflow: hidden;
+  background-color: rgb(195, 238, 244);
+  position: relative;
+}
+
 /* Ensure body takes full viewport height */
 html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   height: 100%;
+  overflow: hidden; /* Ensures no scrollbar on the outer browser window */
   font-family: Arial, sans-serif;
 }
 
 /* Main container: uses flex to position content + bottom nav */
-.main-container {
+/* .main-container {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
+} */
 
 /* Scrollable text screen */
+
 .text-screen {
   flex: 1;                /* Fills available space above the nav */
   background-color: #ffd6d6; /* Pink background */
@@ -42,10 +56,11 @@ html, body {
 
 /* Fixed bottom navigation bar */
 .bottom-nav {
+  bottom: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #00008b; /* Dark blue */
+  background-color: #7cb6f8; /* Dark blue */
   padding: 10px 0;
   box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
 }
@@ -136,4 +151,24 @@ html, body {
   color: #000;
 }
 
+
+h1 {
+  font-size: 28pt;
+}
+
+#first_line {
+   background-color: black;
+   color: yellow;
+   margin: 0;
+   text-align: center;
+   font-size: 32px;
+}
+
+#second_line {
+  background-color: yellow;
+  color: purple;
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+}
           
