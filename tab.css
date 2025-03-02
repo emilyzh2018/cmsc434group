@@ -24,14 +24,13 @@ html, body {
 }
 
 /* Main container: uses flex to position content + bottom nav */
-/* .main-container {
+.main-container {
   display: flex;
   flex-direction: column;
   height: 100%;
-} */
+}
 
 /* Scrollable text screen */
-
 .text-screen {
   flex: 1;               
   background-color: #ffd6d6; 
