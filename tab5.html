@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Text Screen Example</title>
+  <link rel="stylesheet" href="tab.css" />
+</head>
+<body>
+
+  <div class="device">
+
+    <div class="choices-screen">
+      <h1>-Choices Screen-</h1>
+      
+      <form id="choicesForm">
+       
+        <p>Camera Type #1:</p>
+        <label>
+          <input type="radio" name="camera1" value="dSLR" checked>
+          dSLR
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="camera1" value="Mirrorless">
+          Mirrorless
+        </label>
+
+    
+        <p>Camera Type #2:</p>
+        <select name="camera2">
+          <option value="dSLR">dSLR</option>
+          <option value="Mirrorless">Mirrorless</option>
+          <option value="Point-and-Shoot">Point-and-Shoot</option>
+        </select>
+
+      
+        <button type="button" class="print-button" onclick="showChoices()">
+          Print something based on above choices...
+        </button>
+      </form>
+
+    
+      <div id="result"></div>
+    </div>
+
+    
+  
+    <div class="bottom-nav">
+    
+      <div class="nav-item active">
+        <img 
+          src="images/file.png" 
+          alt="Text Icon" 
+          class="icon"
+        />
+        <span class="label">Text</span>
+      </div>
+      <div class="nav-item">
+        <img 
+          src="images/right-drawn-arrow.png" 
+          alt="LR Icon" 
+          class="icon"
+        />
+        <span class="label">LR</span>
+      </div>
+      <div class="nav-item">
+        <img 
+          src="images/user.png" 
+          alt="Profile Icon" 
+          class="icon"
+        />
+        <span class="label">Profile</span>
+      </div>
+      <div class="nav-item">
+        <img 
+          src="images/choice.png" 
+          alt="Choices Icon" 
+          class="icon"
+        />
+        <span class="label">Choices</span>
+      </div>
+      <div class="nav-item">
+        <img 
+          src="images/to-do-list.png" 
+          alt="ToDo Icon" 
+          class="icon"
+        />
+        <span class="label">ToDo</span>
+      </div>
+  </div>
+  <script src="choices.js"></script>
+</body>
+</html>
