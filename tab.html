@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Text Screen Example</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="main-container">
+    
+    
+    <div class="text-screen">
+      <h1>-Text Screen-</h1>
+     
+      <p>Please note that this font size is too small to read easily on this device for many...</p>
+      <p>Please note that this font size is too small to read easily on this device for many...</p>
+      <p>Please note that this font size is too small to read easily on this device for many...</p>
+      <p>Please note that this font size is too small to read easily on this device for many...</p>
+      <p>Please note that this font size is too small to read easily on this device for many...</p>
+      <p>Please note that this font size is too small to read easily on this device for many...</p>
+      <p>Please note that this font size is too small to read easily on this device for many...</p>
+      <p>Please note that this font size is too small to read easily on this device for many...</p>
+      <p>Please note that this font size is too small to read easily on this device for many...</p>
+    </div>
+
+  
+    <div class="choices-screen">
+      <h1>-Choices Screen-</h1>
+      
+      <form id="choicesForm">
+       
+        <p>Camera Type #1:</p>
+        <label>
+          <input type="radio" name="camera1" value="dSLR" checked>
+          dSLR
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="camera1" value="Mirrorless">
+          Mirrorless
+        </label>
+
+    
+        <p>Camera Type #2:</p>
+        <select name="camera2">
+          <option value="dSLR">dSLR</option>
+          <option value="Mirrorless">Mirrorless</option>
+          <option value="Point-and-Shoot">Point-and-Shoot</option>
+        </select>
+
+      
+        <button type="button" class="print-button" onclick="showChoices()">
+          Print something based on above choices...
+        </button>
+      </form>
+
+    
+      <div id="result"></div>
+    </div>
+
+    
+  
+    <div class="bottom-nav">
+    
+      <div class="nav-item active">
+        <img 
+          src="https://www.freeicons.io/laravel-and-vue-js-icons/file-text-icon-9488?style=flat" 
+          alt="Text Icon" 
+          class="icon"
+        />
+        <span class="label">Text</span>
+      </div>
+      <div class="nav-item">
+        <img 
+          src="https://www.freeicons.io/laravel-and-vue-js-icons/open-book-icon-9493?style=flat" 
+          alt="LR Icon" 
+          class="icon"
+        />
+        <span class="label">LR</span>
+      </div>
+      <div class="nav-item">
+        <img 
+          src="https://www.freeicons.io/laravel-and-vue-js-icons/user-icon-9632?style=flat" 
+          alt="Profile Icon" 
+          class="icon"
+        />
+        <span class="label">Profile</span>
+      </div>
+      <div class="nav-item">
+        <img 
+          src="https://www.freeicons.io/laravel-and-vue-js-icons/settings-icon-9621?style=flat" 
+          alt="Choices Icon" 
+          class="icon"
+        />
+        <span class="label">Choices</span>
+      </div>
+      <div class="nav-item">
+        <img 
+          src="https://www.freeicons.io/laravel-and-vue-js-icons/checklist-icon-9479?style=flat" 
+          alt="ToDo Icon" 
+          class="icon"
+        />
+        <span class="label">ToDo</span>
+      </div>
+    </div>
+  </div>
+  <script src="choices.js"></script>
+</body>
+</html>
