@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+.device {
+  margin:auto; 
+  width: 640px;
+  height: 960px;
+  overflow: hidden;
+  background-color: rgb(195, 238, 244);
+  position: relative;
+}
+
 /* Ensure body takes full viewport height */
 html, body {
   height: 100%;
@@ -12,13 +21,14 @@ html, body {
 }
 
 /* Main container: uses flex to position content + bottom nav */
-.main-container {
+/* .main-container {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
+} */
 
 /* Scrollable text screen */
+
 .text-screen {
   flex: 1;                /* Fills available space above the nav */
   background-color: #ffd6d6; /* Pink background */
@@ -42,6 +52,7 @@ html, body {
 
 /* Fixed bottom navigation bar */
 .bottom-nav {
+  bottom: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
