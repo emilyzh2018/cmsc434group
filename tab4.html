@@ -1,0 +1,112 @@
+<html lang="en"><head>
+    <title>Example</title>
+    <link rel="stylesheet" href="tab.css">
+    </head>
+    
+    <body>
+    <div class="device">
+       
+        <h1>User Profile</h1>
+
+        <div id="profile_picture">
+            <img src="images/cat_profile_picture.png" width="200px">
+
+            <p>Felix Furrington II</p>
+        </div>
+
+        <div id="warning" style="display: none;">
+            Warning! Do not click on the profile image! 
+            <button id="exit-button">X</button>
+        </div>
+
+        <div class="bottom-nav">
+    
+            <div class="nav-item active">
+                <a href="tab1.html">
+                    <img 
+                    src="images/file.png" 
+                    alt="Text Icon" 
+                    class="icon"
+                />
+                </a>
+              <span class="label">Text</span>
+            </div>
+            <div class="nav-item">
+                <a href="tab2.html">
+              <img 
+                src="images/down-right.png" 
+                alt="LR Icon" 
+                class="icon"
+              />
+            </a>
+              <span class="label">LR</span>
+            </div>
+            <div class="nav-item">
+                <a href="tab3.html">
+              <img 
+                src="images/art.png" 
+                alt="Colors Icon" 
+                class="icon"
+              />
+                </a>
+              <span class="label">Colors</span>
+            </div>
+            <div class="nav-item">
+                <a href="tab4.html">
+              <img 
+                src="images/user.png" 
+                alt="Profile Icon" 
+                class="icon"
+              />
+                </a>
+              <span class="label">Profile</span>
+            </div>
+            <div class="nav-item">
+                <a href="tab5.html">
+              <img 
+                src="images/choice.png" 
+                alt="Choices Icon" 
+                class="icon"
+              />
+            </a>
+              <span class="label">Choices</span>
+            </div>
+            <div class="nav-item">
+                <a href="tab6.html">
+                <img 
+                    src="images/to-do-list.png" 
+                    alt="ToDo Icon" 
+                    class="icon"
+                />
+            </a>
+              <span class="label">ToDo</span>
+            </div>
+    </div>
+    
+    
+    </body>
+    <script>
+        let div = document.getElementById("profile_picture");
+        let warningDiv = document.getElementById("warning");
+        let exitButton = document.getElementById("exit-button");
+
+
+        div.addEventListener("click", () => {
+            warningDiv.style.display = "flex";
+        });
+
+        exitButton.addEventListener("click", () => {
+            warningDiv.style.display = "none"
+        });
+    </script>
+    <!-- <footer>
+        <div id="footer">
+            <a href="https://www.flaticon.com/free-icons/text" title="text icons">Text icons created by Pixel perfect - Flaticon</a><br>
+            <a href="https://www.flaticon.com/free-icons/color" title="color icons">Color icons created by nawicon - Flaticon</a><br>
+            <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Freepik - Flaticon</a><br>
+            <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a><br>
+            <a href="https://www.flaticon.com/free-icons/choose" title="choose icons">Choose icons created by Freepik - Flaticon</a><br>
+            <a href="https://www.flaticon.com/free-icons/list" title="list icons">List icons created by Freepik - Flaticon</a><br>   
+        </div>
+    </footer> -->
+    </html>

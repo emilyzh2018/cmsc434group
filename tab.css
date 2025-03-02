@@ -170,4 +170,27 @@ h1 {
   text-align: center;
   font-size: 32px;
 }
+
+#profile_picture {
+  text-align: center;
+  padding: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#warning {
+  background-color: red;
+  padding: 15px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#exit-button {
+  background-color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
           
