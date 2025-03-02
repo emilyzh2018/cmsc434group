@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640, initial-scale=1.0">
+    <title>Tab 6 - ToDo</title>
+    <link rel="stylesheet" href="tab6style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="content">
+            <h1>-To Do List-</h1>
+            <div class="todo-container">
+                <input type="text" id="taskInput" placeholder="New entry...">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="tab1.html" class="nav-item">
+                <img src="icons/text.png" alt="Text Icon"> Text
+            </a>
+            <a href="tab2.html" class="nav-item">
+                <img src="icons/lr.png" alt="LR Icon"> LR
+            </a>
+            <a href="tab3.html" class="nav-item">
+                <img src="icons/colors.png" alt="Colors Icon"> Colors
+            </a>
+            <a href="tab4.html" class="nav-item">
+                <img src="icons/profile.png" alt="Profile Icon"> Profile
+            </a>
+            <a href="tab5.html" class="nav-item">
+                <img src="icons/choices.png" alt="Choices Icon"> Choices
+            </a>
+            <a href="tab6.html" class="nav-item active">
+                <img src="icons/todo.png" alt="ToDo Icon"> ToDo
+            </a>
+        </nav>
+    </div>
+
+    <script>
+        function addTask() {
+            let input = document.getElementById("taskInput");
+            let taskText = input.value.trim();
+            if (taskText === "") return;
+
+            let li = document.createElement("li");
+
+            li.innerHTML = `
+                <span class="task-text">${taskText}</span>
+                <div class="task-buttons">
+                    <button class="check-btn" onclick="toggleTask(this)">✔</button>
+                    <button class="delete-btn" onclick="removeTask(this)">✖</button>
+                </div>
+            `;
+
+            document.getElementById("taskList").appendChild(li);
+            input.value = "";
+        }
+
+        function toggleTask(button) {
+            let taskText = button.parentElement.previousElementSibling;
+            taskText.classList.toggle("completed");
+        }
+
+        function removeTask(button) {
+            button.parentElement.parentElement.remove();
+        }
+    </script>
+</body>
+</html>
