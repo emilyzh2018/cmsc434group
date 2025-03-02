@@ -1,0 +1,139 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure body takes full viewport height */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container: uses flex to position content + bottom nav */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Scrollable text screen */
+.text-screen {
+  flex: 1;                /* Fills available space above the nav */
+  background-color: #ffd6d6; /* Pink background */
+  padding: 20px;
+  overflow-y: auto;       /* Scroll if content is long */
+}
+
+/* Example heading style */
+.text-screen h1 {
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  color: #000; /* black text */
+}
+
+/* Example paragraph style */
+.text-screen p {
+  margin-bottom: 10px;
+  font-size: 1em;         /* Adjust as needed */
+  line-height: 1.5;
+}
+
+/* Fixed bottom navigation bar */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00008b; /* Dark blue */
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+/* Each nav item: icon + label */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;            /* White text/icons by default */
+  font-size: 0.9em;       /* Adjust as needed */
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Active nav item styling */
+.nav-item.active {
+  background-color: #ffd700; /* Gold background */
+  color: #000;               /* Black text/icon for contrast */
+  border-radius: 4px;
+}
+
+/* Icon style */
+.nav-item .icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+/* Label style */
+.nav-item .label {
+  font-size: 0.9em;
+}
+
+.choices-screen {
+  flex: 1;
+  background-color: #ffd6d6; /* Pink */
+  padding: 20px;
+  overflow-y: auto;          /* scroll if content is tall */
+}
+
+.choices-screen h1 {
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  color: #000;
+}
+
+/* Form styling */
+.choices-screen p {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+/* Button styling */
+.print-button {
+  margin-top: 15px;
+  padding: 6px 12px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+/* Result text */
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Icon size */
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+/* Label style */
+.label {
+  font-size: 0.9em;
+}
+
+/* ACTIVE TAB = Gold background + black text/icon */
+.nav-item.active {
+  background-color: #FFD700; /* Gold */
+  border-radius: 4px;
+  color: #000;               /* Black text/icon */
+}
+
+.nav-item.active .label {
+  color: #000;
+}
+
+          
