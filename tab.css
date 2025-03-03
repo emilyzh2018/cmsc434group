@@ -41,7 +41,7 @@ html, body {
 
 .text-screen h1 {
   margin-bottom: 15px;
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
   color: black; 
 }
 
@@ -65,7 +65,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;           
-  font-size: 1.5em;       
+  font-size: 2.0em;       
   padding: 5px 10px;
   cursor: pointer;
   
@@ -78,8 +78,8 @@ html, body {
 }
 
 .nav-item .icon {
-  width: 24px;
-  height: 24px;
+  width: 45px;
+  height: 45px;
   margin-bottom: 4px;
   
 }
@@ -98,8 +98,8 @@ html, body {
 }
 
 .choices-screen h1 {
-  margin-bottom: 15px;
-  font-size: 1.4em;
+  /* margin-bottom: 15px; */
+  /* font-size: 1.4em; */
   color: black;
 }
 
@@ -124,8 +124,8 @@ html, body {
 
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   margin-bottom: 4px;
   color: #FFD700;
 }
@@ -150,6 +150,7 @@ html, body {
 
 
 h1 {
+  padding: 20px;
   font-size: 28pt;
 }
 
@@ -180,14 +181,14 @@ h1 {
 #warning {
   background-color: red;
   padding: 15px;
-  font-size: 25px;
+  font-size: 30px;
   display: flex;
   justify-content: space-between;
 }
 
 #exit-button {
   background-color: red;
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
 }
 
