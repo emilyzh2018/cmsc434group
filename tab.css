@@ -47,7 +47,7 @@ html, body {
 
 .text-screen p {
   margin-bottom: 100px;
-  font-size: 1em;        
+  font-size: 1.5em;        
   line-height: 1.5;
   margin-top: 0px;
 }
@@ -122,6 +122,23 @@ html, body {
   color: black;
 }
 
+.radio-button {
+  font-size: 28px;
+}
+
+.radio {
+  width: 30px;
+  height: 30px;
+}
+
+#drop {
+  font-size: 28px;
+}
+
+.print-button {
+  font-size: 28px;
+}
+
 
 .icon {
   width: 30px;
@@ -136,12 +153,24 @@ html, body {
   color: black;
 }
 
+.form-section-1, .form-section-2 {
+  font-size: 27px;
+}
+
+.form-section-2 {
+  padding-top: 60px;
+}
+
 
 .nav-item.active {
   background-color: #FFD700; 
   border-radius: 4px;
   color: black;       
 
+}
+
+#result {
+  font-size: 28px;
 }
 
 .nav-item.active .label {
