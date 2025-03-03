@@ -1,4 +1,3 @@
-
 function showChoices() {
   const form = document.getElementById('choicesForm');
   
