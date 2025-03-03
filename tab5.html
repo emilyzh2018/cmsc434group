@@ -16,26 +16,26 @@
       
       <form id="choicesForm">
        
-        <p>Camera Type #1:</p>
-        <label>
-          <input type="radio" name="camera1" value="dSLR" checked>
+        <p class="form-section-1">Camera Type #1:</p>
+        <label class="radio-button">
+          <input class="radio" type="radio" name="camera1" value="dSLR" checked>
           dSLR
         </label>
         <br>
-        <label>
-          <input type="radio" name="camera1" value="Mirrorless">
+        <label class="radio-button">
+          <input class="radio" type="radio" name="camera1" value="Mirrorless">
           Mirrorless
         </label>
 
     
-        <p>Camera Type #2:</p>
-        <select name="camera2">
+        <p class="form-section-2">Camera Type #2:</p>
+        <select id="drop" name="camera2">
           <option value="dSLR">dSLR</option>
           <option value="Mirrorless">Mirrorless</option>
           <option value="Point-and-Shoot">Point-and-Shoot</option>
         </select>
 
-      
+        <br>
         <button type="button" class="print-button" onclick="showChoices()">
           Print something based on above choices...
         </button>

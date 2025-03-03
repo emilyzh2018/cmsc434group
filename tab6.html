@@ -12,7 +12,7 @@
             <h1>-To Do List-</h1>
             <div class="todo-container">
                 <input type="text" id="taskInput" placeholder="New entry...">
-                <button onclick="addTask()">Add</button>
+                <button id="task-button" onclick="addTask()">Add</button>
             </div>
             <ul id="taskList"></ul>
         </div>
@@ -93,8 +93,8 @@
             li.innerHTML = `
                 <span class="task-text">${taskText}</span>
                 <div class="task-buttons">
-                    <button class="check-btn" onclick="toggleTask(this)">✔</button>
-                    <button class="delete-btn" onclick="removeTask(this)">✖</button>
+                    <button class="check-button" onclick="toggleTask(this)">✔</button>
+                    <button class="delete-button" onclick="removeTask(this)">✕</button>
                 </div>
             `;
 

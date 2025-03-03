@@ -39,6 +39,18 @@ body {
     padding: 20px;
 }
 
+#task-button {
+  font-size: 25px;
+}
+
+#taskInput {
+  font-size: 25px;
+}
+
+li {
+  font-size: 22px;
+}
+
 .lower-right {
     position: absolute;
     bottom: 70px; 
@@ -63,8 +75,6 @@ body {
   font-size: 2.0em;       
   padding: 5px 10px;
   cursor: pointer;
-  
-  
 }
 
 .nav-item.active {
@@ -81,9 +91,13 @@ body {
   
   .nav-item .label {
     font-size: 0.9em;
-    
-    
   }
+  
+
+  .check-button, .delete-button {
+    font-size: 20px;
+  }
+
   
   .choices-screen {
     flex: 1;
