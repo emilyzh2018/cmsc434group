@@ -100,7 +100,7 @@ html, body {
 .choices-screen h1 {
   margin-bottom: 15px;
   font-size: 1.4em;
-  color: #000;
+  color: black;
 }
 
 .choices-screen p {
@@ -119,7 +119,7 @@ html, body {
 #result {
   margin-top: 10px;
   font-weight: bold;
-  color: #000;
+  color: black;
 }
 
 
