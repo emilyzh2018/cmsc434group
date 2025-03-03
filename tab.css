@@ -140,12 +140,12 @@ html, body {
 .nav-item.active {
   background-color: #FFD700; 
   border-radius: 4px;
-  color: #000;       
+  color: black;       
 
 }
 
 .nav-item.active .label {
-  color: #000;
+  color: black;
 }
 
 
